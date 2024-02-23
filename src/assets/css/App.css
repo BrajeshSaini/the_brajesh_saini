@@ -1,0 +1,823 @@
+/* 
+    font-family: 'Dancing Script', cursive;                      -----   500, 600, 700          (For Logo)
+    font-family: 'Kalam', cursive;                               ----    300, 400
+    font-family: 'Roboto', sans-serif;                           -----   300, 400, 500, 600, 700 (Normal & Italic)  (For Slider)
+    font-family: 'Rubik', sans-serif;                            -----   400, 500               (For Nav, Button)
+*/
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+}
+
+.alert-success {
+    --bs-alert-color: #000000 !important;
+    --bs-alert-bg: #57ffb2 !important;
+    --bs-alert-border-color: #24e38c !important;
+    --bs-alert-link-color: var(--bs-success-text-emphasis);
+}
+.alert-danger {
+    --bs-alert-color: #000000 !important;
+    --bs-alert-bg: #ffd6d9 !important;
+    --bs-alert-border-color: #e96774 !important;
+    --bs-alert-link-color: var(--bs-danger-text-emphasis);
+}
+
+/* End Common */
+
+.primary_txt {
+    color: #ea4634;
+}
+
+.grey_txt {
+    color: #ccc;
+}
+
+/* End Text Color */
+
+.tbs_btn {
+    /* box-shadow: none !important; */
+    font-family: "Rubik", sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 46px !important;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    border-radius: 5px !important;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    padding: 0px !important;
+    border: double 2px transparent !important;
+    box-shadow: 0px 10px 30px rgb(245 87 51 / 30%);
+
+}
+.tbs_btn_sm{
+    line-height: 30px !important;
+}
+
+.tbs_primary_btn {
+    background-image: linear-gradient(to right, #f55733 0%, #f56642 100%), radial-gradient(circle at top left, #f56642, #ffe8e3);
+    color: #ffffff !important;
+}
+
+.tbs_primary_btn:hover,
+.tbs_primary_btn:focus,
+.tbs_primary_btn:active {
+    background: #f55733;
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #f55733, #ffa993);
+    color: #222222 !important;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+
+.tbs_outline_primary_btn {
+    background: #f55733;
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #f55733, #ffa993);
+    color: #222222 !important;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.tbs_outline_primary_btn:hover,
+.tbs_outline_primary_btn:focus,
+.tbs_outline_primary_btn:active {
+    background-image: linear-gradient(to right, #f55733 0%, #f56642 100%), radial-gradient(circle at top left, #f56642, #ffe8e3);
+
+    color: #ffffff !important;
+}
+
+
+.tbs_btn span {
+    padding: 0 42px;
+}
+
+/* .tbs_outline_primary_btn {
+    background-image: linear-gradient(to right, #f55733 0%, #f56642 100%), radial-gradient(circle at top left, #f56642, #ffe8e3);
+    border: double 2px transparent;
+    box-shadow: 0px 10px 30px rgb(245 87 51 / 30%);
+    color: #ffffff !important;
+} */
+
+/* .tbs_outline_primary_btn:hover {
+    background: #f55733;
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #f55733, #ffa993);
+    border: 2px solid transparent !important;
+    color: #222222 !important;
+    box-shadow: none !important;
+    font-family: "Rubik", sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 46px !important;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    border-radius: 5px !important;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    padding: 0px !important;
+} */
+
+/* End Button */
+
+.divider {
+    position: relative;
+    width: 55%;
+    text-align: center;
+    margin-left: 22.5%;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    width: 50%;
+}
+
+.divider::before {
+    bottom: -5px;
+    width: 30%;
+    left: 36%;
+    border-top: solid 1px #d41f34
+}
+
+.divider::after {
+    bottom: -10px;
+    border-top: solid 1px #999;
+    width: 32%;
+    left: 35%;
+}
+
+.logo_img {
+    height: 65px !important;
+}
+
+.logo_txt {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.nav_links {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* End Header */
+
+.slider_section {
+    /* background-color: #fefefe;
+    background: url(./assets/bg_banner_2.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative; */
+}
+
+/* .slider_section::before, */
+.slider_overlay {
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    background: rgb(255 255 255 / 96%);
+}
+
+.slider_details {
+    /* height: 300px; */
+}
+
+.slider_desc {
+    z-index: 999;
+}
+
+.slider_desc h3,
+.underline_with_heading {
+    position: relative;
+}
+
+.slider_desc h3::before,
+.slider_desc h3::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 18%;
+}
+
+.slider_desc h3::before {
+    top: 15px;
+    left: 18%;
+    width: 30%;
+    border-top: solid 1px #d41f34
+}
+
+.slider_desc h3::after {
+    top: 20px;
+    left: 18%;
+    border-top: solid 1px #999;
+    width: 33%;
+}
+
+
+.underline_with_heading::before,
+.underline_with_heading::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+}
+
+.underline_with_heading::before {
+    bottom: -5px;
+    width: 30%;
+    border-top: solid 1px #d41f34
+}
+
+.underline_with_heading::after {
+    bottom: -10px;
+    border-top: solid 1px #999;
+    width: 33%;
+}
+
+.slider_section .me_img {
+    height: 425px !important;
+}
+
+/* End Slider */
+
+.me_img {
+    height: 250px !important;
+}
+
+/* End About */
+
+.experience {}
+
+.experience .box {
+    width: 165px;
+    height: 150px;
+    border: dashed 2px #ccc;
+    /* border: dashed 2px #f55733; */
+    position: absolute;
+    top: 0;
+    left: 135px;
+}
+
+.experience .box::after {
+    content: '';
+    width: 165px;
+    height: 150px;
+    /* border: dashed 2px #f55733; */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.experience h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 85px;
+}
+
+.experience h1 small {
+    /* color: #e8e8e8; */
+    font-weight: 100;
+}
+
+.experience span {
+
+    text-align: left;
+    color: #000000;
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+    margin-left: 25px;
+    border: dashed 2px #ccc;
+}
+
+/* End Experience */
+
+.technology .image_col {
+    border: dashed 1px #ccc;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technology img {
+    /* opacity: 0.7; */
+    /* filter: grayscale(1); */
+    height: 100px;
+}
+
+.technology .image_col:hover img {
+    /* opacity: 1; */
+    /* filter: grayscale(0); */
+}
+
+.technology .item img {
+    height: inherit !important;
+}
+
+.owl-carousel .owl-item img {
+    width: auto !important;
+}
+
+/* End Technology */
+
+.my_self_container h3 {
+    font-weight: 700;
+}
+
+.my_self_container p {
+    /* font-weight: 600; */
+    /* font-size: 21px; */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.footer_widgets_col p,
+.footer_widgets_col ul li {
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+}
+
+/* End Footer Widget */
+
+.card-body {
+    /* background: rgb(245 98 62 / 92.5%); */
+    background: rgb(246 246 246 / 92.5%);
+    /* background: rgb(245 98 62); */
+    /* color: #250f0f !important; */
+    /* color: #fff !important; */
+    /* text-shadow: 1px 1px 1px #fff; */
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.card:hover .card-body {
+    /* display: none ; */
+    opacity: 1;
+}
+
+/* End Service */
+
+
+.form-control:focus {
+    border-color: #ccc !important;
+    box-shadow: 0 0 0 0.1rem rgb(231 163 156 / 19%) !important;
+}
+
+/* End Contact */
+
+@media screen and (max-width:1401px) {
+
+    .slider_desc h3::before,
+    .slider_desc h3::after {
+
+        left: 20%;
+    }
+
+    /* End Slider */
+}
+
+@media screen and (max-width:1367px) {
+
+    .slider_section .me_img {
+        height: 400px !important;
+    }
+
+    /* End Slider */
+    .card img {
+        height: 300px;
+    }
+
+    /* End Service */
+
+    .h1,
+    h1 {
+        font-size: 2.25rem !important;
+    }
+
+    .h3,
+    h3 {
+        font-size: 1.50rem !important;
+    }
+
+    .h5,
+    h5 {
+        font-size: 1rem !important;
+    }
+
+    /* End Font  */
+
+    .experience h1 {
+        font-size: 75px !important;
+    }
+
+    .experience span {
+        font-size: 24px;
+    }
+
+    /* End Experience */
+
+    .technology .image_col {
+        height: 80px;
+    }
+
+    /* End Technology */
+}
+
+@media screen and (max-width:1200px) {
+
+    .tbs_btn {
+        line-height: 44px !important;
+    }
+
+
+    .tbs_btn span {
+        padding: 0 40px;
+    }
+
+    /* End Button */
+
+    /* Font  */
+    .h1,
+    h1 {
+        font-size: 2.15rem !important;
+    }
+
+    .h3,
+    h3 {
+        font-size: 1.40rem !important;
+    }
+
+    .h5,
+    h5 {
+        font-size: 0.90rem !important;
+    }
+
+    .experience h1 {
+        font-size: 71px !important;
+    }
+
+    .experience span {
+        font-size: 22px;
+    }
+
+    /* End Experience */
+
+    small {
+        font-size: .75rem !important;
+    }
+
+    /* End Font */
+
+
+
+
+    .slider_section .me_img {
+        height: 390px !important;
+    }
+
+    /* End Slider */
+
+
+
+    .card img {
+        height: 275px;
+    }
+
+    /* End Service */
+
+}
+
+
+@media screen and (max-width:992px) {
+
+    .tbs_btn {
+        line-height: 40px !important;
+    }
+
+    .tbs_btn span {
+        padding: 0 32.5px;
+    }
+
+    /* End Button */
+    .h1,
+    h1 {
+        /* font-size: 2.15rem !important; */
+        font-size: 1.82rem !important;
+    }
+
+    .h3,
+    h3 {
+        font-size: 1.30rem !important;
+    }
+
+    .h5,
+    h5 {
+        font-size: 0.90rem !important;
+    }
+
+    /* End Font */
+
+    .slider_desc h3::before,
+    .slider_desc h3::after {
+        left: 27%;
+    }
+
+    .slider_section .me_img {
+        height: 300px !important;
+    }
+
+    /* End Slider */
+
+    .card {
+        max-width: 90% !important;
+        margin: auto;
+    }
+
+    .card img {
+        height: 270px;
+    }
+
+    /* End Service */
+
+    .technology .image_col {
+        height: 75px;
+    }
+
+    /* End Technology */
+
+
+
+    .contact_from_container .underline_with_heading::before,
+    .contact_from_container .underline_with_heading::after {
+        display: none;
+    }
+
+    /* End Contact */
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .slider_desc h3::before,
+    .slider_desc h3::after {
+        display: none;
+    }
+
+    /* End Slider */
+    .card {
+        max-width: 60% !important;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    /* End Service */
+
+    .footer_widgets_col .underline_with_heading::before,
+    .footer_widgets_col .underline_with_heading::after {
+        display: none;
+    }
+
+    /* End Footer Widgets */
+
+    .technology .image_col {
+        height: 65px;
+    }
+
+    /* End Technology */
+
+    /* My Self */
+    .my_self_container .my_self_img {
+        width: auto !important;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .slider_section .me_img {
+        height: auto !important;
+        width: 75%;
+    }
+
+    /* End Slider */
+    .my_self_container h3 {
+        /* font-size: 1.25rem !important; */
+    }
+
+    .my_self_container .my_self_img {
+        width: auto !important;
+        height: 275px;
+    }
+
+    /* End My Self */
+
+    /* Font  */
+
+    .experience span {
+        font-size: 20px;
+    }
+
+    /* End Font */
+
+}
+
+
+@media screen and (max-width: 501px) {
+
+    .card {
+        max-width: 75% !important;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    /* End Service */
+}
+
+@media screen and (max-width: 442px) {
+    .logo_img {
+        height: 50px !important;
+    }
+
+    .logo_txt {
+        font-size: 25px;
+    }
+
+    /*End Header  */
+
+    /* Font  */
+    .h1,
+    h1 {
+        /* font-size: 2.15rem !important; */
+        font-size: 1.35rem !important;
+    }
+
+    .h3,
+    h3 {
+        font-size: 1rem !important;
+    }
+
+    .h5,
+    h5 {
+        font-size: 0.70rem !important;
+    }
+
+    small {
+        font-size: .65em !important;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .footer_widgets_col p,
+    .footer_widgets_col ul li {
+        font-size: 14px;
+    }
+
+    .footer_widgets_col h5 {
+        font-size: 0.85rem !important;
+    }
+
+    .tbs_btn {
+        font-size: 12px !important;
+        line-height: 32px !important
+    }
+
+    .tbs_btn span {
+        padding: 0 20px;
+    }
+
+    /* End Font */
+
+
+    .my_self_container .my_self_img {
+        height: 270px;
+    }
+
+    /* End My Self */
+
+    .card {
+        max-width: 65% !important;
+    }
+
+    /* End Service */
+    .footer_logo {
+        height: 135px
+    }
+
+    /* End Footer Logo */
+}
+
+@media screen and (max-width: 381px) {
+
+    p {
+        font-size: 13px;
+    }
+
+    .footer_widgets_col p,
+    .footer_widgets_col ul li {
+        font-size: 13px;
+    }
+
+    /* End Font */
+
+    .my_self_container .my_self_img {
+        height: 260px;
+    }
+
+    /* End My Self */
+
+
+    .experience h1 {
+        font-size: 70px !important;
+    }
+
+
+    /* End Experience */
+    .card {
+        max-width: 72% !important;
+    }
+
+    /* End Service */
+    .footer_logo {
+        height: 130px
+    }
+
+    /* End Footer Logo */
+}
+
+@media screen and (max-width: 281px) {
+
+    .tbs_btn {
+        font-size: 10px !important;
+        line-height: 30px !important;
+    }
+
+    /* Font  */
+    .h1,
+    h1 {
+        /* font-size: 2.15rem !important; */
+        font-size: 1.15rem !important;
+    }
+
+    .h3,
+    h3 {
+        font-size: 0.80rem !important;
+    }
+
+    .h5,
+    h5 {
+        font-size: 0.50rem !important;
+    }
+
+    /* End Font  */
+    .my_self_container .my_self_img {
+        height: 199px;
+    }
+
+    .my_self_container h3 {
+        /* font-size: 17px !important; */
+    }
+
+    /* End My Self */
+    .experience h1 {
+        font-size: 55px !important;
+    }
+
+    .experience span {
+        font-size: 17px;
+    }
+
+    .footer_logo {
+        height: 115px;
+    }
+}
