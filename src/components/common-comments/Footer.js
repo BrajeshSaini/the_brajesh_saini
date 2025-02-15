@@ -25,10 +25,23 @@ function Footer() {
                             {/* <ListGroup.Item>horizontally!</ListGroup.Item> */}
                         </ListGroup>
                    
-                        <small className="text-center">
-                            Copyright &copy;  2023 All Right Reserved.
-                        </small>
+                        <Row className="align-items-center slider_details">
+                            <Col className="text-center text-sm-start">
+                                <small className="text-center">
+                                    Terms and conditons
+                                </small>
+                            </Col>
+                            <Col className="text-center text-sm-end">
+                                <small className="text-center text-sm-center">
+                                    The Brajesh Saini &copy;  2024 All Right Reserved.
+                                </small>
+                            </Col>
+                        </Row>
+                        {/* <small className="text-center">
+                            The Brajesh Saini &copy;  2024 All Right Reserved.
+                        </small> */}
                     </Col>
+                    
                 </Row>
             </Container>
         </>
